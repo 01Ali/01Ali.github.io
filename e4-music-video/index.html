@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- No attribution required -->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Me</title>
+    <!-- please add a favicon -->
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <button class="video-control-button" id="muteButton"></button>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+        
+
+        <div class="box">
+          <div class="slider">
+            <input type="range" min="0" max="100" value="20">
+          </div>
+          <div class="value"></div>
+        </div>
+        <!-- here i tried to add a volume slider were i watched a few tutroials and in particular i watch the video Custom Range Slider using HTML CSS & Javascript | CodingNepal, (https://www.youtube.com/watch?v=5bmDoibhKZw&ab_channel=CodingNepal), were i used the part in which i wanted, however I was not able to to connect the hmtl to javascript in a way to try to adjust the vlume through the volume slider -->
+
+      </div>
+
+    </div>
+<h2 align="center"> Euphoric Echoes</h2>
+<p align="center"> "Euphoric Echoes" is a mesmerizing music video that transports viewers on a visually stunning journey through a vibrant and surreal dreamscape.</p>
+<!-- here I added some text and a description to add meaning to the video, i used the text align center element to center the text, placing it underneath the video, i experemented adding a border around the text, however it wasen't visuallly nice-->
+
+  </body>
+
+
+
+</html>
